@@ -5,6 +5,7 @@
  (name ppx_module_timer_runtime)
  (public_name ppx_module_timer.runtime)
  (libraries base stdio time_now)
+ (flags (:standard -w -69))
  (preprocess
   (pps ppx_base -compare-require-explicit-locality))
  (js_of_ocaml
