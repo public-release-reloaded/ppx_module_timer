@@ -12,14 +12,16 @@ build: [
 ]
 depends: [
   "ocaml" {>= "5.5.0"}
-  "base" {>= "v0.18~" & < "v0.19~"}
-  "ppx_module_timer_runtime" {>= "v0.18~" & < "v0.19~"}
-  "ppxlib_jane" {>= "v0.18~" & < "v0.19~"}
   "dune" {>= "3.17.0"}
   "ppxlib" {> "0.38.0"}
 ]
 available: arch != "x86_32"
-synopsis: "Ppx rewriter that records top-level module startup times"
+synopsis: "Ppxlib helpers for ppx_module_timer"
 description: "
+Ppxlib helpers used by ppxes that cooperate with ppx_module_timer (e.g. to
+position generated items relative to the module-timer start).  Split into its
+own package so those ppxes can depend on it without pulling in the
+ppx_module_timer rewriter itself.
+
 Part of the Jane Street's PPX rewriters collection.
 "

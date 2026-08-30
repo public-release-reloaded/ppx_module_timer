@@ -5,4 +5,4 @@
  (libraries base ppxlib ppxlib_jane)
  (preprocess
   (pps ppxlib.metaquot))
- (ppx_runtime_libraries ppx_module_timer.runtime))
+ (ppx_runtime_libraries ppx_module_timer_runtime))

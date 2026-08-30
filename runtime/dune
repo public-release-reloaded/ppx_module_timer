@@ -3,7 +3,7 @@
   (language c)
   (names stubs))
  (name ppx_module_timer_runtime)
- (public_name ppx_module_timer.runtime)
+ (public_name ppx_module_timer_runtime)
  (libraries base stdio time_now)
  (flags (:standard -w -69))
  (preprocess
